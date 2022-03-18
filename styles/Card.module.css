@@ -24,6 +24,7 @@
     border-radius: 5px;
     margin-bottom: 2em;
     padding: 1em;
+    cursor: pointer;
 }
 
 .card button:hover {

@@ -3,7 +3,10 @@ import styles from "../styles/Header.module.css"
 function Header() {
     return (
         <header className={styles.header}>
-            <img src="./images/pokeball.png" alt="pokebola: redonda com cores vermelha e branca e um butão no meio" />
+            <Link href='/'>
+                <img src="./images/pokeball.png" alt="pokebola: redonda com cores vermelha e branca e um butão no meio" />
+            </Link>
+
             <ul>
                 <li>
                     <Link href='/'>Home</Link>
