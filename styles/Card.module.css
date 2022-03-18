@@ -1,0 +1,31 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: #343334;
+    border: 3px solid #FF1A1A;
+    margin: 1em;
+    border-radius: 5%;
+    text-align: center;
+    box-shadow: 5px 3px 5px rgba(1, 1, 1, 0.4);
+}
+
+.image {
+    margin: 1em 0;
+}
+
+.card h4 {
+    color: white;
+    margin: 1em 0;
+}
+
+.card button {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+.card button:hover {
+    background-color: #cacaca;
+}

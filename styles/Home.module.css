@@ -1,0 +1,14 @@
+.home {
+    text-align: center;
+}
+
+.home span {
+    color: #FF1A1A;
+    font-weight: bolder;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
