@@ -1,7 +1,7 @@
 .card {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 250px;
     background-color: #343334;
     border: 3px solid #FF1A1A;
     margin: 1em;
@@ -19,14 +19,30 @@
     margin: 1em 0;
 }
 
-.card button {
+.button {
+    display: flex;
     background-color: white;
     border-radius: 5px;
-    margin-bottom: 2em;
-    padding: 1em;
+    width: 100px;
+    margin: 2em auto;
     cursor: pointer;
+    justify-content: center;
 }
 
-.card button:hover {
-    background-color: #cacaca;
+.button a {
+    padding: 1em;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover {
+    background-color: #FF1A1A;
+    box-shadow: 3px 5px 1px rgba(1, 1, 1, 0.5);
+}
+
+.button:hover a {
+    color: white;
 }

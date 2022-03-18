@@ -1,12 +1,10 @@
 import Image from "next/image"
+import Link from "next/link"
 import styles from "../styles/Card.module.css"
-interface poke{
-    name:string,
-    url:string
-    id:number
-}
+import { IPokemon } from "./interfaces/IPokemon"
+
 interface Props{
-    pokemon:poke
+    pokemon:IPokemon
 }
 function Card({pokemon}:Props){
     return(
@@ -15,7 +13,8 @@ function Card({pokemon}:Props){
                 <Image src={`https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png`} height='120px' width='120px' alt={pokemon.name}/>
             </div>
             <h4>{pokemon.name}</h4>
-            <div><button>Detalhes</button></div>
+            <span>#{pokemon.id}</span>
+            <div className={styles.button}><Link href={`/pokemon/${pokemon.id}`}><a>Detalhes</a></Link></div>
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Card from '../components/card'
+import { IPokemon } from '../components/interfaces/IPokemon'
 import styles from '../styles/Home.module.css'
 
 export async function getStaticProps() {
@@ -14,15 +15,17 @@ export async function getStaticProps() {
     props: { pokemons: data.results },
   }
 }
-
-const Home: NextPage = ({ pokemons }: any) => {
+interface Props{
+  pokemons:IPokemon[]
+}
+const Home: NextPage<Props> = ({ pokemons }: Props) => {
 
   return (
     <div className={styles.home}>
       <h1><span>Poke</span>next</h1>
       <div className={styles.content}>
-        {pokemons.map((pokemon: any) => (
-          <Card pokemon={pokemon} />
+        {pokemons.map((pokemon) => (
+          <Card key={pokemon.id} pokemon={pokemon} />
         ))}
       </div>
     </div>
