@@ -24,7 +24,7 @@ const Home: NextPage<Props> = ({ pokemons }: Props) => {
     <div className={styles.home}>
       <div className={styles.title}>
         <h1><span>Poke</span>Next</h1>
-        <Image src="/images/pokeball.png" height='30px' width='45px' />
+        <Image src="/images/pokeball.png" height='30px' width='45px' alt='pokebola'/>
       </div>
 
       <div className={styles.content}>

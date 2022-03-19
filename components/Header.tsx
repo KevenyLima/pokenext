@@ -5,10 +5,13 @@ function Header() {
     return (
         <header className={styles.header}>
             <Link href='/'>
-                <Image src="/images/pokeball.png"
-                    width="50"
-                    height="50"
-                    alt="PokeNext" />
+                <a>
+                    <Image src="/images/pokeball.png"
+                        width="50"
+                        height="50"
+                        alt="PokeNext" />
+                </a>
+
             </Link>
 
             <ul>
