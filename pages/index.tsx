@@ -15,14 +15,18 @@ export async function getStaticProps() {
     props: { pokemons: data.results },
   }
 }
-interface Props{
-  pokemons:IPokemon[]
+interface Props {
+  pokemons: IPokemon[]
 }
 const Home: NextPage<Props> = ({ pokemons }: Props) => {
 
   return (
     <div className={styles.home}>
-      <h1><span>Poke</span>next</h1>
+      <div className={styles.title}>
+        <h1><span>Poke</span>Next</h1>
+        <Image src="/images/pokeball.png" height='30px' width='45px' />
+      </div>
+
       <div className={styles.content}>
         {pokemons.map((pokemon) => (
           <Card key={pokemon.id} pokemon={pokemon} />
